@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="jNab">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/jNab.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

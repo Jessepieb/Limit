@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.7.0
+Created-By: 10.0-b23 (Sun Microsystems Inc.)
+
+Name: jNab
+Plugin-Name: Talkie_Plugin
+Plugin-MainClass: jNab.ext.helperPlugins.TalkiePlugin
+Plugin-Type: RecordPlugin
+Plugin-Parameters: receiver
+Plugin-Actions: 
+
+
+ 

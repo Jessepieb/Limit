@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="plugins">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/files/plugins/NullPlugin.jar!/" />
+      <root url="jar://$PROJECT_DIR$/files/plugins/DicePlugin.jar!/" />
+      <root url="jar://$PROJECT_DIR$/files/plugins/GreenOrangeRedWithEarsPlugin.jar!/" />
+      <root url="jar://$PROJECT_DIR$/files/plugins/SystemOutLoggerPlugin.jar!/" />
+      <root url="jar://$PROJECT_DIR$/files/plugins/EchoPlugin.jar!/" />
+      <root url="jar://$PROJECT_DIR$/files/plugins/TalkiePlugin.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

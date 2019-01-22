@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: jNab.core.bunny.BunnyTest
+-------------------------------------------------------------------------------
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.543 s - in jNab.core.bunny.BunnyTest

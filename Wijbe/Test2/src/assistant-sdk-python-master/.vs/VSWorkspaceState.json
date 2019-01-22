@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\google-assistant-sdk",
+    "\\google-assistant-sdk\\googlesamples",
+    "\\google-assistant-sdk\\googlesamples\\assistant",
+    "\\google-assistant-sdk\\googlesamples\\assistant\\grpc",
+    "\\google-assistant-sdk\\googlesamples\\assistant\\grpc\\pydub"
+  ],
+  "SelectedNode": "\\google-assistant-sdk\\googlesamples\\assistant\\grpc\\pushtotalk.py",
+  "PreviewInSolutionExplorer": false
+}

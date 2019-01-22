@@ -1,0 +1,18 @@
+telnet 192.168.0.101 6969
+
+Plugins:
+ADD bunny plugin: 0013d382ea94 Dice_Plugin
+ADD bunny plugin: 0013d382ea94 Echo_Plugin
+ADD bunny plugin: 0013d382ea94 Alexa_Plugin
+REMOVE bunny plugin: 0013d382ea94 Alexa_Plugin
+REMOVE bunny plugin: 0013d382ea94 Echo_Plugin
+REMOVE bunny plugin: 0013d382ea94 Dice_Plugin
+
+Info:
+INFO bunnies
+INFO bunny: 0013d382ea94
+SET bunny name: 0013d382ea94 bugs
+SET bunny plugin parameter: 0013d382ea94 Dice_Plugin
+SAVE bunny: 0013d382ea94
+
+SHUTDOWN client

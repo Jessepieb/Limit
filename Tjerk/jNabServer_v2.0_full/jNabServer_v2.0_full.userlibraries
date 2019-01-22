@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eclipse-userlibraries>
+  <library name="jNab">
+    <archive path="C:/Users/Tsjerk/Documents/NabAlexa/jNabServer_v2.0_full/lib/jNab.jar" />
+  </library>
+  <library name="plugins">
+    <archive path="C:/Users/Tsjerk/Documents/NabAlexa/jNabServer_v2.0_full/files/plugins/NullPlugin.jar" />
+    <archive path="C:/Users/Tsjerk/Documents/NabAlexa/jNabServer_v2.0_full/files/plugins/DicePlugin.jar" />
+    <archive path="C:/Users/Tsjerk/Documents/NabAlexa/jNabServer_v2.0_full/files/plugins/GreenOrangeRedWithEarsPlugin.jar" />
+    <archive path="C:/Users/Tsjerk/Documents/NabAlexa/jNabServer_v2.0_full/files/plugins/SystemOutLoggerPlugin.jar" />
+    <archive path="C:/Users/Tsjerk/Documents/NabAlexa/jNabServer_v2.0_full/files/plugins/EchoPlugin.jar" />
+    <archive path="C:/Users/Tsjerk/Documents/NabAlexa/jNabServer_v2.0_full/files/plugins/TalkiePlugin.jar" />
+  </library>
+  <library name="scala-sdk-2.12.7">
+    <archive path="C:/Users/Tsjerk/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.7.jar" />
+    <archive path="C:/Users/Tsjerk/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.12.7.jar" />
+  </library>
+</eclipse-userlibraries>
+

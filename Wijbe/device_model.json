@@ -1,0 +1,11 @@
+{
+  "project_id": "konijn-75aa9",
+  "device_model_id": "konijn-75aa9-wijbe-shizzle-9insy5",
+  "manifest": {
+    "manufacturer": "nab",
+    "product_name": "Wijbe shizzle",
+    "device_description": ""
+  },
+  "device_type": "action.devices.types.AUTO"
+  "traits": []
+}
