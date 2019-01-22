@@ -36,7 +36,8 @@ def proxy_handler(client_socket):
 
 
 def gcommand():
-    root = os.getcwd()
+    root = os.chdir("~/Documents/Limit/Jesse/jjNabServer_v2.0_full/")
+    #root = os.getcwd()
     print(root)
     wavinput = os.path.exists("./input.wav")
     #output = os.path.exists("./output.wav")
