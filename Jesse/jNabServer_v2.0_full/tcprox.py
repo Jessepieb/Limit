@@ -44,7 +44,7 @@ def gcommand():
     #convertscript = root + "/pushtotalk.py"
     convertpath = os.path.exists(convertscript)
 
-    encodecmd = "ffmpeg -y -i " + root + "/input.wav -c:a pcm_s32le " + root + "/output.wav"
+    encodecmd = "sudo ffmpeg -y -i " + root + "/input.wav -c:a pcm_s32le " + root + "/output.wav"
 
     if wavinput:
         print("input exists")
