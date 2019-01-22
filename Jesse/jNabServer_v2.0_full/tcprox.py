@@ -48,26 +48,26 @@ def gcommand():
         print("input exists")
         os.system(encodecmd)
 
-        if output:
-            print("output exists")
-            req = AudioSegment.from_wav(root + "/output.wav")
-            req.export("convert.wav", format="wav", bitrate="8k")
+        # if output:
+        #     print("output exists")
+        req = AudioSegment.from_wav(root + "/output.wav")
+        req.export("convert.wav", format="wav", bitrate="8k")
 
-            if convertpath:
-                print("pushTT exists")
-                conv = subprocess.call(["python", convertscript ,"-i", "convert.wav", "-o","response.wav"])
-                #poll = conv.poll()
+        if convertpath:
+            print("pushTT exists")
+            conv = subprocess.call(["python", convertscript ,"-i", "convert.wav", "-o","response.wav"])
+            #poll = conv.poll()
 
-            else:
-                print("Error, PushTT can not be found")
+        else:
+            print("Error, PushTT can not be found")
 
             #while(poll == None):
     
             #    print("waiting...")
             #    time.sleep(1)
             #    poll = conv.poll()
-        else:
-            print("Error, output does not exist")
+        #else:
+         #   print("Error, output does not exist")
 
     else:
         print("Error, input does not exist")
