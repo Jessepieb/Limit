@@ -2,6 +2,7 @@ import socket
 import subprocess
 import threading
 
+import pathlib2 as pathlib
 from pydub import AudioSegment
 import sys
 import os
