@@ -39,7 +39,8 @@ def gcommand():
     print(root)
     wavinput = os.path.exists("./input.wav")
     output = os.path.exists("./output.wav")
-    convertscript = root + "/assistant-sdk-python-master/google-assistant-sdk/googlesamples/assistant/grpc/pushtotalk.py"
+    #convertscript = root + "/assistant-sdk-python-master/google-assistant-sdk/googlesamples/assistant/grpc/pushtotalk.py"
+    convertscript = root + "/pushtotalk.py"
     convertpath = os.path.exists(convertscript)
 
     encodecmd = "ffmpeg -y -i " + root + "/input.wav -c:a pcm_s32le " + root + "/output.wav"
