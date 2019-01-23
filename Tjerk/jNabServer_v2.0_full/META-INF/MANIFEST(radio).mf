@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Created-By: 10.0-b23 (Sun Microsystems Inc.)
+Ant-Version: Apache Ant 1.7.0
+
+Name: jNab
+Plugin-Name: Radio_Plugin
+Plugin-MainClass: jNab.core.plugins.Radio_Plugin
+Plugin-Type: ClickPlugin
+Plugin-Parameters: 
+Plugin-Actions: 

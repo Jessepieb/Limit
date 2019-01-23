@@ -1,6 +1,8 @@
 package jNab.core.plugins;
 
 import java.io.*;
+import java.net.URL;
+import java.net.URLConnection;
 import java.nio.file.*;
 
 import jNab.core.choreography.*;
@@ -8,6 +10,8 @@ import jNab.core.events.*;
 import jNab.core.protocol.*;
 import jNab.ext.helperPlugins.*;
 import jNab.ext.persistency.Serializer;
+import javazoom.jl.decoder.JavaLayerException;
+import javazoom.jl.player.Player;
 
 //RFID_Plugin
 //Can read RFID tags and record voice.
@@ -17,6 +21,7 @@ public class RFID_Plugin extends AbstractPlugin implements RFIDEventListener, Re
     private static String PLUGIN_NAME = "RFID_Plugin";
     private static String[] PARAMETERS = {};
     
+    private static int channelID = 2;
     private static String lastTag = "";
     private static int mode = 0; // 0=Bunny, 1=Audio
     private static Path src, dst;
@@ -112,10 +117,31 @@ public class RFID_Plugin extends AbstractPlugin implements RFIDEventListener, Re
             case "d0021a053b4240ca":
             	System.out.println("Yellow");
             	if(mode == 0) {
-            		mb = new MessageBlock(12345);
-            		mb.addPlayChoreographyFromLibraryCommand("Ears");
-            		mb.addWaitPreviousEndCommand();
-            		mb.addPlayChoreographyFromLibraryCommand("Colours");
+            		mb = new MessageBlock(54321);
+            		
+            		
+            		
+            		//mb.addPlayStreamCommand("https://tunein.com/station/?stationid=30377&amp;utm_medium=referral&amp;utm_content=s30377&amp;utm_source=geminiEmbedArt&amp;st=52");
+            		//mb.addPlayStreamCommand("http://185.85.28.166:8000");
+            		
+            		//mb.addPlayStreamCommand("http://stream-uk1.radioparadise.com/mp3-32/;");
+            		mb.addPlayStreamCommand("http://185.85.28.140:80/;");
+            		
+            		//mb.addPlayStreamCommand("192.168.0.100:1234"); //Streamen vanaf VLC?
+            		//mb.addPlayStreamCommand("http://tunein.com/embed/player/s30377/");
+            		//http://tun.in/seqZ1
+            		//https://tunein.com/radio/Rock-92-923-s30377/
+            		
+            		//mb.addWaitPreviousEndCommand();
+            		//mb.addPlayChoreographyFromLibraryCommand("Ears");
+            		//mb.addWaitPreviousEndCommand();
+            		//mb.addPlayChoreographyFromLibraryCommand("Colours");
+            		try {
+						System.out.println(new String(mb.decode(), "US-ASCII"));
+					} catch (UnsupportedEncodingException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
             		mb.addWaitPreviousEndCommand();
                 	choreographyPacket(mb);
             	} else if(mode == 1) {
@@ -127,10 +153,12 @@ public class RFID_Plugin extends AbstractPlugin implements RFIDEventListener, Re
     
     public void choreographyPacket(MessageBlock mb) {
     	p = new Packet();
-    	p.addBlock(new PingIntervalBlock(20));
+    	p.addBlock(new PingIntervalBlock(1));
     	p.addBlock(mb);
+    	System.out.println("_________________");
+    	System.out.println(new String(mb.getData()));
+    	System.out.println("=================");
     	this.bunny.addPacket(p);
-    	
     }
     
     public void createChoreography(Choreography c) {
@@ -179,6 +207,80 @@ public class RFID_Plugin extends AbstractPlugin implements RFIDEventListener, Re
 		    return;
 		}
 	}
+	
+	/*
+	
+	private static String[] channel = {
+	        "http://radio.flex.ru:8000/radionami",
+	        "http://stream-uk1.radioparadise.com/mp3-32",
+	        "https://stream.gal.io/arrow"
+	    };
+	    
+	private static void removeSecurity() {
+	        for (int i = 0; i < channel.length; i++) {
+	            if(channel[i].substring(0,5).equals("https")) {
+	                channel[i] = "http" + channel[i].substring(5);
+	            }
+	        }
+	    }
+	
+	private static void playRadioStream ( String spec ) throws IOException, JavaLayerException
+    {
+        // Connection
+        URLConnection urlConnection = new URL ( spec ).openConnection ();
+
+        // If you have proxy
+        //        Properties systemSettings = System.getProperties ();
+        //        systemSettings.put ( "proxySet", true );
+        //        systemSettings.put ( "http.proxyHost", "host" );
+        //        systemSettings.put ( "http.proxyPort", "port" );
+        // If you have proxy auth
+        //        BASE64Encoder encoder = new BASE64Encoder ();
+        //        String encoded = encoder.encode ( ( "login:pass" ).getBytes () );
+        //        urlConnection.setRequestProperty ( "Proxy-Authorization", "Basic " + encoded );
+
+        // Connecting
+        urlConnection.connect ();
+
+        // Playing
+        System.out.println("Playing");
+        Player player = new Player ( urlConnection.getInputStream () );
+        player.play ();
+    }
+
+	@Override
+	public void onSingleClick() {
+	        
+		 //Possible if it works: loadChannelsFromFIle();
+        removeSecurity();
+        
+        try
+        {
+            playRadioStream ( channel[channelID] );
+        }
+        catch ( IOException e )
+        {
+            e.printStackTrace ();
+        }
+        catch ( JavaLayerException e )
+        {
+            e.printStackTrace ();
+        }
+	}
+
+	@Override
+	public void onDoubleClick() {
+		// TODO Auto-generated method stub
+		if(channelID == channel.length) {
+			channelID = 0;
+		} else {
+			channelID++;
+		}
+	}
+	
+	*/
+	
+	
 
 	@Override
 	public void onSingleClick() {
@@ -238,5 +340,5 @@ public class RFID_Plugin extends AbstractPlugin implements RFIDEventListener, Re
 			System.out.println(e);
 		}
 		
-	}
+	} 
 }

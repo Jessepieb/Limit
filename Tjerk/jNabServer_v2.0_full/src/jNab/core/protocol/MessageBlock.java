@@ -79,7 +79,7 @@ public class MessageBlock extends Block
      */
     public void addPlayStreamCommand(String url)
     {
-	this.commands += "ST " + url + "\n";
+	this.commands += "MS " + url + "\n"; //of TS
     }
 
     /**
