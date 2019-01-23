@@ -1,8 +1,7 @@
 import jNab.core.bunny.Bunny;
 import jNab.core.server.MicroServer;
 import jNab.ext.configuration.ServerConfigurationServer;
-import jNab.ext.helperPlugins.RadioPlugin;
-import jNab.ext.helperPlugins.SetModePlugin;
+import jNab.ext.helperPlugins.*;
 import jNab.ext.persistency.Serializer;
 
 import java.io.File;
