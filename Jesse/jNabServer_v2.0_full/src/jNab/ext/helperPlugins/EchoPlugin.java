@@ -8,7 +8,9 @@ import jNab.core.protocol.Packet;
 import jNab.core.protocol.PingIntervalBlock;
 
 import java.io.*;
-import java.lang.Runtime;
+import java.net.Socket;
+import java.net.UnknownHostException;
+
 /**
  * Plugin echoing on a bunny the sound that has been previously recorded (on the same bunny).
  *
@@ -42,78 +44,41 @@ public class EchoPlugin extends AbstractPlugin implements RecordEventListener, C
 	 * @see RecordEventListener#onSimpleRecord(byte[])
 	 */
 	public void onSimpleRecord(byte[] data) {
-        // Writing data to echo-<MAC>.wav test
-        try {
-            System.out.println(new File(".").getAbsoluteFile());
-            FileOutputStream fos = new FileOutputStream("input.wav");
-            System.out.println("fos made");
-            for (int element : data)
-                fos.write(element);
-            fos.close();
-            Process process = null;
-            Process convert = null;
-            String command = "";
+		try{
+			//get directory path
+			System.out.println(new File(".").getAbsoluteFile());
+			//write to voice command to input.wav
+			FileOutputStream fos = new FileOutputStream("input.wav");
+			System.out.println("fos made");
+			for (int element : data)
+				fos.write(element);
+			fos.close();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 
-            try {
-                ProcessBuilder processBuilder = new ProcessBuilder("//usr/bin/python","convert.py");
-                process = processBuilder.start();
-
-                InputStream inputStream = process.getInputStream();
-
-                String is = printStream(inputStream);
-                System.out.println(is);
-                InputStream errorStream = process.getErrorStream();
-                is = printStream(errorStream);
-                System.out.println(is);
-                process.waitFor();
-
-                ProcessBuilder convertBuilder = new ProcessBuilder("/bin/sh","test.sh");
-                convert = convertBuilder.start();
-
-                InputStream convertStream = convert.getInputStream();
-                is = printStream(convertStream);
-                System.out.println(is);
-                InputStream ErrorStream = convert.getErrorStream();
-                is = printStream(ErrorStream);
-                System.out.println(is);
-                process.waitFor();
-
-
+		try (
+				//open socket to connect to localhost tcp proxy
+                Socket echoSocket = new Socket("localhost", 9000);
+                PrintWriter out = new PrintWriter(echoSocket.getOutputStream(), true);
+                BufferedReader in = new BufferedReader(new InputStreamReader(echoSocket.getInputStream()))
+        ){
+			//send byte to proxy
+            out.write('g');
+            out.flush();
+            String inString;
+            while((inString = in.readLine()) != null){
+                System.out.println("String: " + inString);
+                if(inString.equals("done")){
+                    System.out.println("true");
+                }
             }
-            catch (IOException e){
-                throw new RuntimeException(e);
-            }
-            } catch (IOException e) {
-                throw new RuntimeException(e);
-            } catch (InterruptedException e) {
-                throw new RuntimeException(e);
-            }
+        } catch (IOException e1) {
+            e1.printStackTrace();
+        }
 
-
-            //Process p = Runtime.getRuntime().exec("python -m ~/Documents/NabAlexa/Jesse/jNabServer_v2.0_full/convert.py");
-            //System.out.println(p.toString());
-
-            //	StringBuilder output = new StringBuilder();
-
-            //	BufferedReader reader = new BufferedReader(
-            //			new InputStreamReader(p.getInputStream()));
-
-            //    boolean pisalive = true;
-            String line;
-            //	while ((line = reader.readLine()) != null) {
-            //		output.append(line + "\n");
-            //	}
-            //	while (pisalive) {
-            //		System.out.println("waiting...");
-            //		pisalive = p.isAlive();
-
-            //		if (!pisalive){
-            //			System.out.println("Success!");
-            //			System.out.println(output);
-            //		}
-            //	}
-            // Playing recorded sound
-        Packet p = new Packet();
+			// create packet
+            Packet p = new Packet();
             MessageBlock mb = new MessageBlock(600);
             mb.addPlayLocalSoundCommand("response.wav");
             mb.addWaitPreviousEndCommand();
