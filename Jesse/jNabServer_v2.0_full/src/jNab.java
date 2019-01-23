@@ -1,8 +1,8 @@
 import jNab.core.bunny.Bunny;
-import jNab.core.plugins.AbstractPlugin;
 import jNab.core.server.MicroServer;
 import jNab.ext.configuration.ServerConfigurationServer;
-import jNab.ext.helperPlugins.EchoPlugin;
+import jNab.ext.helperPlugins.RadioPlugin;
+import jNab.ext.helperPlugins.SetModePlugin;
 import jNab.ext.persistency.Serializer;
 
 import java.io.File;
@@ -161,11 +161,12 @@ public class jNab
 	// Unserializing bunnies
 	System.out.println("<jNab> Reading serialized bunnies");
 	serializer.loadBunnies(microServer.getBurrow(), microServer.getPluginFactory());
-		Bunny nabaztag = new Bunny("0013d382ea94");
-		microServer.getBurrow().addBunny(nabaztag);
 
-		AbstractPlugin plugin = new EchoPlugin();
-		nabaztag.addPlugin(plugin);
+	Bunny nabaztag = new Bunny("0013d382ea94");
+	microServer.getBurrow().addBunny(nabaztag);
+	System.out.println("Adding SetModePlugin...");
+	nabaztag.addPlugin(new SetModePlugin());
+
 	// Starting micro server
 	microServer.start();
 
