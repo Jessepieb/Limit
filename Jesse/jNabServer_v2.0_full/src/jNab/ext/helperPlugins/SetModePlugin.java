@@ -9,10 +9,7 @@ public class SetModePlugin extends AbstractPlugin implements RFIDEventListener
 
     private static String[] PARAMETERS = {};
 
-    public SetModePlugin()
-    {
-	super(PLUGIN_NAME, PARAMETERS);
-    }
+    public SetModePlugin(){ super(PLUGIN_NAME, PARAMETERS);}
 
     public void onRfid(String rfid) {
         //Setting active plugin based on rfid bunnies:

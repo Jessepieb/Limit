@@ -8,7 +8,10 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="26ec892b-2ed5-4a5d-bd02-c5985f919e15" name="Default Changelist" comment="" />
+    <list default="true" id="26ec892b-2ed5-4a5d-bd02-c5985f919e15" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jNab/ext/helperPlugins/SetModePlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jNab/ext/helperPlugins/SetModePlugin.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,55 +19,13 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="-1398659061">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="1" />
-          <entry key="project.open.time.2" value="1" />
-          <entry key="project.opened" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="class" value="1" />
-          <entry key="java" value="5" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="CLASS" value="1" />
-          <entry key="JAVA" value="5" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="java" value="16" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="JAVA" value="16" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/jNab.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3071">
-              <caret line="197" column="15" selection-start-line="197" selection-start-column="8" selection-end-line="197" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/jNab/ext/helperPlugins/AlexaPlugin.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="47" column="13" lean-forward="true" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="13" />
+            <state relative-caret-position="349">
+              <caret line="49" column="46" selection-start-line="49" selection-start-column="46" selection-end-line="49" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -73,10 +34,40 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/jNab/ext/configuration/ServerConfigurationServer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="416">
+              <caret line="431" column="18" selection-start-line="431" selection-start-column="14" selection-end-line="431" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/jNab/ext/helperPlugins/EchoPlugin.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="629">
+              <caret line="49" column="34" selection-start-line="49" selection-start-column="34" selection-end-line="49" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/jNab/ext/helperPlugins/SetModePlugin.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="19" column="36" lean-forward="true" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
+            <state relative-caret-position="136">
+              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/jNab/core/bunny/Bunny.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="11509">
+              <caret line="733" column="32" lean-forward="true" selection-start-line="733" selection-start-column="32" selection-end-line="733" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -87,12 +78,17 @@
     <findStrings>
       <find>handleAddBunnyPluginCommand</find>
       <find>serverc</find>
+      <find>loadclass</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/jNab/ext/helperPlugins/AlexaPlugin.java" />
+        <option value="$PROJECT_DIR$/src/jNab/ext/helperPlugins/SetModePlugin.java" />
       </list>
     </option>
   </component>
@@ -100,12 +96,12 @@
     <option name="width" value="2151" />
     <option name="height" value="1218" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -130,33 +126,170 @@
               <item name="jNabServer_v2.0_full" type="462c0819:PsiDirectoryNode" />
               <item name="classes" type="462c0819:PsiDirectoryNode" />
               <item name="jNab" type="462c0819:PsiDirectoryNode" />
-              <item name="ext" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="jNabServer_v2.0_full" type="b2602c69:ProjectViewProjectNode" />
               <item name="jNabServer_v2.0_full" type="462c0819:PsiDirectoryNode" />
               <item name="classes" type="462c0819:PsiDirectoryNode" />
               <item name="jNab" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="bunny" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jNabServer_v2.0_full" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jNabServer_v2.0_full" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+              <item name="jNab" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="choreography" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jNabServer_v2.0_full" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jNabServer_v2.0_full" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+              <item name="jNab" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="events" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jNabServer_v2.0_full" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jNabServer_v2.0_full" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+              <item name="jNab" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="exceptions" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jNabServer_v2.0_full" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jNabServer_v2.0_full" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+              <item name="jNab" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="misc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jNabServer_v2.0_full" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jNabServer_v2.0_full" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+              <item name="jNab" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="plugins" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jNabServer_v2.0_full" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jNabServer_v2.0_full" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+              <item name="jNab" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="protocol" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jNabServer_v2.0_full" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jNabServer_v2.0_full" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+              <item name="jNab" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jNabServer_v2.0_full" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jNabServer_v2.0_full" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jNabServer_v2.0_full" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jNabServer_v2.0_full" type="462c0819:PsiDirectoryNode" />
+              <item name="manifestFiles" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jNabServer_v2.0_full" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jNabServer_v2.0_full" type="462c0819:PsiDirectoryNode" />
+              <item name="manifestFiles" type="462c0819:PsiDirectoryNode" />
+              <item name="AlexaPlugin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jNabServer_v2.0_full" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jNabServer_v2.0_full" type="462c0819:PsiDirectoryNode" />
+              <item name="manifestFiles" type="462c0819:PsiDirectoryNode" />
+              <item name="RFID_RecordPlugin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jNabServer_v2.0_full" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jNabServer_v2.0_full" type="462c0819:PsiDirectoryNode" />
+              <item name="manifestFiles" type="462c0819:PsiDirectoryNode" />
+              <item name="SetModePlugin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jNabServer_v2.0_full" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jNabServer_v2.0_full" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jNabServer_v2.0_full" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jNabServer_v2.0_full" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="production" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jNabServer_v2.0_full" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jNabServer_v2.0_full" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="production" type="462c0819:PsiDirectoryNode" />
+              <item name="jNabServer_v2.0_full" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jNabServer_v2.0_full" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jNabServer_v2.0_full" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="production" type="462c0819:PsiDirectoryNode" />
+              <item name="jNabServer_v2.0_full" type="462c0819:PsiDirectoryNode" />
+              <item name="jNab" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jNabServer_v2.0_full" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jNabServer_v2.0_full" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="production" type="462c0819:PsiDirectoryNode" />
+              <item name="jNabServer_v2.0_full" type="462c0819:PsiDirectoryNode" />
+              <item name="jNab" type="462c0819:PsiDirectoryNode" />
+              <item name="ext" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jNabServer_v2.0_full" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jNabServer_v2.0_full" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="production" type="462c0819:PsiDirectoryNode" />
+              <item name="jNabServer_v2.0_full" type="462c0819:PsiDirectoryNode" />
+              <item name="jNab" type="462c0819:PsiDirectoryNode" />
+              <item name="ext" type="462c0819:PsiDirectoryNode" />
+              <item name="helperPlugins" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jNabServer_v2.0_full" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jNabServer_v2.0_full" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jNabServer_v2.0_full" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jNabServer_v2.0_full" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="jNab" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jNabServer_v2.0_full" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jNabServer_v2.0_full" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="jNab" type="462c0819:PsiDirectoryNode" />
+              <item name="ext" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jNabServer_v2.0_full" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jNabServer_v2.0_full" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="jNab" type="462c0819:PsiDirectoryNode" />
               <item name="ext" type="462c0819:PsiDirectoryNode" />
               <item name="configuration" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jNabServer_v2.0_full" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jNabServer_v2.0_full" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jNabServer_v2.0_full" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jNabServer_v2.0_full" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="jNab" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jNabServer_v2.0_full" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jNabServer_v2.0_full" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="jNab" type="462c0819:PsiDirectoryNode" />
-              <item name="ext" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="jNabServer_v2.0_full" type="b2602c69:ProjectViewProjectNode" />
@@ -170,13 +303,14 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="handleAddBunnyPluginCommand&#9;PSI&#9;JAVA://jNab.ext.configuration.ServerConfigurationServer#handleAddBunnyPluginCommand" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548341306597" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/files/plugins" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
@@ -215,20 +349,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="2148" height="1175" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25266525" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Designer" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32981783" />
@@ -236,24 +365,25 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Maven Projects" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Messages" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Maven Projects" order="7" />
     </layout>
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/jNab/ext/configuration/ServerConfigurationServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-459">
-          <caret line="48" column="35" selection-start-line="48" selection-start-column="24" selection-end-line="48" selection-end-column="35" />
+        <state relative-caret-position="416">
+          <caret line="431" column="18" selection-start-line="431" selection-start-column="14" selection-end-line="431" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -274,24 +404,97 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/jNab/ext/helperPlugins/EchoPlugin.java">
+    <entry file="file://$PROJECT_DIR$/out/production/jNabServer_v2.0_full/jNab/ext/helperPlugins/EchoPlugin.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" selection-start-line="9" selection-end-line="9" selection-end-column="17" />
+        <state>
+          <folding>
+            <element signature="e#0#4713#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/jNab/ext/helperPlugins/SetModePlugin.java">
+    <entry file="file://$PROJECT_DIR$/src/jNab/core/plugins/PluginFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="178" column="54" selection-start-line="178" selection-start-column="50" selection-end-line="178" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manifestFiles/EchoPluginManifest">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="16" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manifestFiles/SetModePlugin/MANIFEST.MF">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/production/jNabServer_v2.0_full/jNab/ext/helperPlugins/AlexaPlugin.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#6716#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jNab/ext/helperPlugins/DicePlugin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.classpath">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_192/src.zip!/java/util/Set.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="224" column="12" selection-start-line="224" selection-start-column="12" selection-end-line="224" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jNab/core/bunny/Bunny.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11509">
+          <caret line="733" column="32" lean-forward="true" selection-start-line="733" selection-start-column="32" selection-end-line="733" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jNab/core/plugins/AbstractPlugin.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
-          <caret line="19" column="36" lean-forward="true" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
+          <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/jNab/ext/helperPlugins/AlexaPlugin.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="47" column="13" lean-forward="true" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="13" />
+        <state relative-caret-position="349">
+          <caret line="49" column="46" selection-start-line="49" selection-start-column="46" selection-end-line="49" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jNab/ext/helperPlugins/EchoPlugin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="49" column="34" selection-start-line="49" selection-start-column="34" selection-end-line="49" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jNab/ext/helperPlugins/SetModePlugin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
