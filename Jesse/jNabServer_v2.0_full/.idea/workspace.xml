@@ -10,6 +10,8 @@
   <component name="ChangeListManager">
     <list default="true" id="26ec892b-2ed5-4a5d-bd02-c5985f919e15" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jNabServer_v2.0_full.iml" beforeDir="false" afterPath="$PROJECT_DIR$/jNabServer_v2.0_full.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/jNab/ext/helperPlugins/SetModePlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jNab/ext/helperPlugins/SetModePlugin.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -25,7 +27,7 @@
         <entry file="file://$PROJECT_DIR$/src/jNab/ext/helperPlugins/AlexaPlugin.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="349">
-              <caret line="49" column="46" selection-start-line="49" selection-start-column="46" selection-end-line="49" selection-end-column="46" />
+              <caret line="49" column="69" selection-start-line="49" selection-start-column="69" selection-end-line="49" selection-end-column="69" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -55,7 +57,7 @@
         <entry file="file://$PROJECT_DIR$/src/jNab/ext/helperPlugins/SetModePlugin.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -67,7 +69,7 @@
         <entry file="file://$PROJECT_DIR$/src/jNab/core/bunny/Bunny.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="11509">
-              <caret line="733" column="32" lean-forward="true" selection-start-line="733" selection-start-column="32" selection-end-line="733" selection-end-column="32" />
+              <caret line="733" column="32" selection-start-line="733" selection-start-column="32" selection-end-line="733" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -463,7 +465,7 @@
     <entry file="file://$PROJECT_DIR$/src/jNab/core/bunny/Bunny.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="11509">
-          <caret line="733" column="32" lean-forward="true" selection-start-line="733" selection-start-column="32" selection-end-line="733" selection-end-column="32" />
+          <caret line="733" column="32" selection-start-line="733" selection-start-column="32" selection-end-line="733" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -477,7 +479,7 @@
     <entry file="file://$PROJECT_DIR$/src/jNab/ext/helperPlugins/AlexaPlugin.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="349">
-          <caret line="49" column="46" selection-start-line="49" selection-start-column="46" selection-end-line="49" selection-end-column="46" />
+          <caret line="49" column="69" selection-start-line="49" selection-start-column="69" selection-end-line="49" selection-end-column="69" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -494,7 +496,7 @@
     <entry file="file://$PROJECT_DIR$/src/jNab/ext/helperPlugins/SetModePlugin.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -560,7 +562,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
