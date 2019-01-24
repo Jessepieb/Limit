@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_jnabserver_v2.0_full" default="compile.module.jnabserver_v2.0_full">
+  <dirname property="module.jnabserver_v2.0_full.basedir" file="${ant.file.module_jnabserver_v2.0_full}"/>
+  
+  <property name="module.jdk.home.jnabserver_v2.0_full" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.jnabserver_v2.0_full" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.jnabserver_v2.0_full" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.jnabserver_v2.0_full" value="-encoding UTF-8 -source 11 -target 11 ${compiler.args}"/>
+  
+  <property name="jnabserver_v2.0_full.output.dir" value="${module.jnabserver_v2.0_full.basedir}/out/production/jNabServer_v2.0_full"/>
+  <property name="jnabserver_v2.0_full.testoutput.dir" value="${module.jnabserver_v2.0_full.basedir}/out/test/jNabServer_v2.0_full"/>
+  
+  <path id="jnabserver_v2.0_full.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="jnabserver_v2.0_full.module.production.classpath">
+    <path refid="${module.jdk.classpath.jnabserver_v2.0_full}"/>
+  </path>
+  
+  <path id="jnabserver_v2.0_full.runtime.production.module.classpath">
+    <pathelement location="${jnabserver_v2.0_full.output.dir}"/>
+  </path>
+  
+  <path id="jnabserver_v2.0_full.module.classpath">
+    <path refid="${module.jdk.classpath.jnabserver_v2.0_full}"/>
+    <pathelement location="${jnabserver_v2.0_full.output.dir}"/>
+  </path>
+  
+  <path id="jnabserver_v2.0_full.runtime.module.classpath">
+    <pathelement location="${jnabserver_v2.0_full.testoutput.dir}"/>
+    <pathelement location="${jnabserver_v2.0_full.output.dir}"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.jnabserver_v2.0_full">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.jnabserver_v2.0_full">
+    <patternset refid="excluded.from.module.jnabserver_v2.0_full"/>
+  </patternset>
+  
+  <path id="jnabserver_v2.0_full.module.sourcepath">
+    <dirset dir="${module.jnabserver_v2.0_full.basedir}">
+      <include name="src"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.jnabserver_v2.0_full" depends="compile.module.jnabserver_v2.0_full.production,compile.module.jnabserver_v2.0_full.tests" description="Compile module jNabServer_v2.0_full"/>
+  
+  <target name="compile.module.jnabserver_v2.0_full.production" depends="register.custom.compilers" description="Compile module jNabServer_v2.0_full; production classes">
+    <mkdir dir="${jnabserver_v2.0_full.output.dir}"/>
+    <javac2 destdir="${jnabserver_v2.0_full.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.jnabserver_v2.0_full}/javac">
+      <compilerarg line="${compiler.args.jnabserver_v2.0_full}"/>
+      <bootclasspath refid="jnabserver_v2.0_full.module.bootclasspath"/>
+      <classpath refid="jnabserver_v2.0_full.module.production.classpath"/>
+      <src refid="jnabserver_v2.0_full.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.jnabserver_v2.0_full"/>
+    </javac2>
+    
+    <copy todir="${jnabserver_v2.0_full.output.dir}">
+      <fileset dir="${module.jnabserver_v2.0_full.basedir}/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.jnabserver_v2.0_full.tests" depends="register.custom.compilers,compile.module.jnabserver_v2.0_full.production" description="compile module jNabServer_v2.0_full; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.jnabserver_v2.0_full" description="cleanup module">
+    <delete dir="${jnabserver_v2.0_full.output.dir}"/>
+    <delete dir="${jnabserver_v2.0_full.testoutput.dir}"/>
+  </target>
+</project>
