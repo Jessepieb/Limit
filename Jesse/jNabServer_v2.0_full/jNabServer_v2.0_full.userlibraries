@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eclipse-userlibraries>
+  <library name="plugins">
+    <archive path="C:/Users/jordy/Desktop/Nabaztag Project/The Limit/Jesse/jNabServer_v2.0_full/files/plugins/NullPlugin.jar" />
+    <archive path="C:/Users/jordy/Desktop/Nabaztag Project/The Limit/Jesse/jNabServer_v2.0_full/files/plugins/DicePlugin.jar" />
+    <archive path="C:/Users/jordy/Desktop/Nabaztag Project/The Limit/Jesse/jNabServer_v2.0_full/files/plugins/EchoPlugin.jar" />
+    <archive path="C:/Users/jordy/Desktop/Nabaztag Project/The Limit/Jesse/jNabServer_v2.0_full/files/plugins/GreenOrangeRedWithEarsPlugin.jar" />
+    <archive path="C:/Users/jordy/Desktop/Nabaztag Project/The Limit/Jesse/jNabServer_v2.0_full/files/plugins/AlexaPlugin.jar" />
+    <archive path="C:/Users/jordy/Desktop/Nabaztag Project/The Limit/Jesse/jNabServer_v2.0_full/files/plugins/SetModePlugin.jar" />
+    <archive path="C:/Users/jordy/Desktop/Nabaztag Project/The Limit/Jesse/jNabServer_v2.0_full/files/plugins/SystemOutLoggerPlugin.jar" />
+    <archive path="C:/Users/jordy/Desktop/Nabaztag Project/The Limit/Jesse/jNabServer_v2.0_full/files/plugins/RFID_RecordPlugin.jar" />
+    <archive path="C:/Users/jordy/Desktop/Nabaztag Project/The Limit/Jesse/jNabServer_v2.0_full/files/plugins/TalkiePlugin.jar" />
+  </library>
+  <library name="jNab">
+    <archive path="C:/Users/jordy/Desktop/Nabaztag Project/The Limit/Jesse/jNabServer_v2.0_full/lib/jNab.jar" />
+  </library>
+</eclipse-userlibraries>
+

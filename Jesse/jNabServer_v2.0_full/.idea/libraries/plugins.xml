@@ -1,14 +1,15 @@
 <component name="libraryTable">
   <library name="plugins">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/files/plugins/DicePlugin.jar!/" />
-      <root url="jar://$PROJECT_DIR$/files/plugins/SystemOutLoggerPlugin.jar!/" />
-      <root url="jar://$PROJECT_DIR$/files/plugins/GreenOrangeRedWithEarsPlugin.jar!/" />
-      <root url="jar://$PROJECT_DIR$/files/plugins/SetModePlugin.jar!/" />
-      <root url="jar://$PROJECT_DIR$/files/plugins/EchoPlugin.jar!/" />
       <root url="jar://$PROJECT_DIR$/files/plugins/NullPlugin.jar!/" />
-      <root url="jar://$PROJECT_DIR$/files/plugins/TalkiePlugin.jar!/" />
+      <root url="jar://$PROJECT_DIR$/files/plugins/DicePlugin.jar!/" />
+      <root url="jar://$PROJECT_DIR$/files/plugins/EchoPlugin.jar!/" />
+      <root url="jar://$PROJECT_DIR$/files/plugins/GreenOrangeRedWithEarsPlugin.jar!/" />
       <root url="jar://$PROJECT_DIR$/files/plugins/AlexaPlugin.jar!/" />
+      <root url="jar://$PROJECT_DIR$/files/plugins/SetModePlugin.jar!/" />
+      <root url="jar://$PROJECT_DIR$/files/plugins/SystemOutLoggerPlugin.jar!/" />
+      <root url="jar://$PROJECT_DIR$/files/plugins/RFID_RecordPlugin.jar!/" />
+      <root url="jar://$PROJECT_DIR$/files/plugins/TalkiePlugin.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

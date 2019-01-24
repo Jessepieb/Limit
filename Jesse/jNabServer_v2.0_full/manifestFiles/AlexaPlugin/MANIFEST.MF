@@ -8,5 +8,4 @@ Plugin-Type: RecordPlugin
 Plugin-MainClass: jNab.ext.helperPlugins.AlexaPlugin
 Plugin-Parameters: .
 Plugin-Name: Alexa_Plugin
-Class-Path: files/plugins/SetModePlugin.jar
 
