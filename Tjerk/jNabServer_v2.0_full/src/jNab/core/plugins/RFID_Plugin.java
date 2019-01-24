@@ -67,14 +67,82 @@ public class RFID_Plugin extends AbstractPlugin implements RFIDEventListener, Re
                 	/*choreography = new Choreography("Ears");
                 	choreography.addRelativeEarMoveCommand(0, Choreography.EAR_LEFT, 1);          
                 	choreography.addAbsoluteEarMoveCommand(0, Choreography.EAR_RIGHT, 5, Choreography.DIRECTION_BACKWARD);
-                	createChorography(choreography);
+                	createChoreography(choreography);
                 	*/
                 	//String[] choreographies = { "Ears" };
                 	//choreographyPacket(choreographies);
                 	
-                	this.bunny.removePlugin(voiceAssistant);
+                	/* Spinning ears only
+                	choreography = new Choreography("Spin_Ears");
+                	choreography.addTempoCommand(0,100);
+                	for(int i = 0; i < 200; i++){
+                		choreography.addRelativeEarMoveCommand(1, Choreography.EAR_LEFT, 12);
+                    	choreography.addRelativeEarMoveCommand(0, Choreography.EAR_RIGHT, 12);
+                	}
+                	createChoreography(choreography); */
+                	
+                	choreography = new Choreography("Disco");
+                	choreography.addTempoCommand(0, 10); //100 = 1sec
+                	for(int i = 0; i < 150; i++) {
+                		switch(i % 6) {
+                		case(0):
+                			choreography.addLedColorCommand(1, Choreography.LED_NOSE, 255, 0, 0);
+                			choreography.addLedColorCommand(0, Choreography.LED_LEFT, 255, 165, 0);
+                			choreography.addLedColorCommand(0, Choreography.LED_CENTER, 255, 255, 0);
+                			choreography.addLedColorCommand(0, Choreography.LED_RIGHT, 0, 255, 0);
+                			choreography.addLedColorCommand(0, Choreography.LED_BOTTOM, 0, 0, 255);
+                			choreography.addRelativeEarMoveCommand(0, Choreography.EAR_LEFT, 12);
+                        	choreography.addRelativeEarMoveCommand(0, Choreography.EAR_RIGHT, 12);
+                			continue;
+                		case(1):
+                			choreography.addLedColorCommand(1, Choreography.LED_NOSE, 255, 165, 0);
+	                		choreography.addLedColorCommand(0, Choreography.LED_LEFT, 255, 255, 0);
+	            			choreography.addLedColorCommand(0, Choreography.LED_CENTER, 0, 255, 0);
+	            			choreography.addLedColorCommand(0, Choreography.LED_RIGHT, 0, 0, 255);
+	            			choreography.addLedColorCommand(0, Choreography.LED_BOTTOM, 128, 0, 128);
+                			continue;
+                		case(2):
+                			choreography.addLedColorCommand(1, Choreography.LED_NOSE, 255, 255, 0);
+	                		choreography.addLedColorCommand(0, Choreography.LED_LEFT, 0, 255, 0);
+	            			choreography.addLedColorCommand(0, Choreography.LED_CENTER, 0, 0, 255);
+	            			choreography.addLedColorCommand(0, Choreography.LED_RIGHT, 128, 0, 128);
+	            			choreography.addLedColorCommand(0, Choreography.LED_BOTTOM, 255, 0, 0);
+                			continue;
+                		case(3):
+                			choreography.addLedColorCommand(1, Choreography.LED_NOSE, 0, 255, 0);
+	                		choreography.addLedColorCommand(0, Choreography.LED_LEFT, 0, 0, 255);
+	            			choreography.addLedColorCommand(0, Choreography.LED_CENTER, 128, 0, 128);
+	            			choreography.addLedColorCommand(0, Choreography.LED_RIGHT, 255, 0, 0);
+	            			choreography.addLedColorCommand(0, Choreography.LED_BOTTOM, 255, 165, 0);
+                			continue;
+                		case(4):
+                			choreography.addLedColorCommand(1, Choreography.LED_NOSE, 0, 0, 255);
+	                		choreography.addLedColorCommand(0, Choreography.LED_LEFT, 128, 0, 128);
+	            			choreography.addLedColorCommand(0, Choreography.LED_CENTER, 255, 0, 0);
+	            			choreography.addLedColorCommand(0, Choreography.LED_RIGHT, 255, 165, 0);
+	            			choreography.addLedColorCommand(0, Choreography.LED_BOTTOM, 255, 255, 0);
+                			continue;
+                		case(5):
+                			choreography.addLedColorCommand(1, Choreography.LED_NOSE, 128, 0 , 128);
+	                		choreography.addLedColorCommand(0, Choreography.LED_LEFT, 255, 0, 0);
+	            			choreography.addLedColorCommand(0, Choreography.LED_CENTER, 255, 165, 0);
+	            			choreography.addLedColorCommand(0, Choreography.LED_RIGHT, 255, 255, 0);
+	            			choreography.addLedColorCommand(0, Choreography.LED_BOTTOM, 0, 255, 0);
+                			continue;
+                		}
+                	}
+                	createChoreography(choreography);
+                	
+                	mb = new MessageBlock(12345);
+                	mb.addPlayLocalSoundCommand("./Not_The_Limit_2.mp3");
+                	mb.addPlayChoreographyFromLibraryCommand("Disco");
+            		//mb.addPlayChoreographyFromLibraryCommand("Spin_Ears");
+            		mb.addWaitPreviousEndCommand();
+                	choreographyPacket(mb);
+                	
+                	/*this.bunny.removePlugin(voiceAssistant);
                 	voiceAssistant = new EchoPlugin();
-                	this.bunny.addPlugin(voiceAssistant);
+                	this.bunny.addPlugin(voiceAssistant);*/
                 } else if(mode == 1) {
                 	rfidAudio(rfid);
                 }
@@ -124,8 +192,8 @@ public class RFID_Plugin extends AbstractPlugin implements RFIDEventListener, Re
             		//mb.addPlayStreamCommand("https://tunein.com/station/?stationid=30377&amp;utm_medium=referral&amp;utm_content=s30377&amp;utm_source=geminiEmbedArt&amp;st=52");
             		//mb.addPlayStreamCommand("http://185.85.28.166:8000");
             		
-            		//mb.addPlayStreamCommand("http://stream-uk1.radioparadise.com/mp3-32/;");
-            		mb.addPlayStreamCommand("http://185.85.28.140:80/;");
+            		mb.addPlayStreamCommand("broadcast/http://stream-uk1.radioparadise.com/mp3-32/;");
+            		//mb.addPlayStreamCommand("broadcast/files/streams/rockchannel.m3u");
             		
             		//mb.addPlayStreamCommand("192.168.0.100:1234"); //Streamen vanaf VLC?
             		//mb.addPlayStreamCommand("http://tunein.com/embed/player/s30377/");
@@ -136,12 +204,7 @@ public class RFID_Plugin extends AbstractPlugin implements RFIDEventListener, Re
             		//mb.addPlayChoreographyFromLibraryCommand("Ears");
             		//mb.addWaitPreviousEndCommand();
             		//mb.addPlayChoreographyFromLibraryCommand("Colours");
-            		try {
-						System.out.println(new String(mb.decode(), "US-ASCII"));
-					} catch (UnsupportedEncodingException e) {
-						// TODO Auto-generated catch block
-						e.printStackTrace();
-					}
+            		
             		mb.addWaitPreviousEndCommand();
                 	choreographyPacket(mb);
             	} else if(mode == 1) {
@@ -155,9 +218,6 @@ public class RFID_Plugin extends AbstractPlugin implements RFIDEventListener, Re
     	p = new Packet();
     	p.addBlock(new PingIntervalBlock(1));
     	p.addBlock(mb);
-    	System.out.println("_________________");
-    	System.out.println(new String(mb.getData()));
-    	System.out.println("=================");
     	this.bunny.addPacket(p);
     }
     
