@@ -47,7 +47,7 @@ public class AlexaPlugin extends AbstractPlugin implements RecordEventListener, 
         //Trigger the SetModePlugin:
         try {
             System.out.println("Adding SetModePlugin...");
-            this.bunny.addPlugin(new SetModePlugin());
+            this.bunny.addPlugin(new jNab.ext.helperPlugins.SetModePlugin());
             System.out.println("Removing AlexaPlugin...");
             this.bunny.removePlugin(this);
         }

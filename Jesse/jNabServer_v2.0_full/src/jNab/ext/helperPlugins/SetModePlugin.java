@@ -26,11 +26,12 @@ public class SetModePlugin extends AbstractPlugin implements RFIDEventListener
                 this.bunny.removePlugin(this);*/
                 break;
             case "d0021a053b462c56":
+                /*
                 System.out.println("RFID: Green");
                 System.out.println("Adding RFID_RecordPlugin...");
-                this.bunny.addPlugin(new RFID_RecordPlugin());
+                this.bunny.addPlugin(new jNab.ext.helperPlugins.RFID_RecordPlugin());
                 System.out.println("Removing SetModePlugin...");
-                this.bunny.removePlugin(this);
+                this.bunny.removePlugin(this);*/
                 break;
             case "d0021a053b463984":
                 System.out.println("RFID: Pink");
@@ -43,14 +44,13 @@ public class SetModePlugin extends AbstractPlugin implements RFIDEventListener
             case "d0021a053b452c90":
                 System.out.println("RFID: Orange");
                 System.out.println("Adding AlexaPlugin...");
-                this.bunny.addPlugin(new AlexaPlugin());
+                this.bunny.addPlugin(new jNab.ext.helperPlugins.AlexaPlugin());
                 System.out.println("Removing SetModePlugin...");
                 this.bunny.removePlugin(this);
                 break;
             case "d0021a053b4240ca":
-                /*
                 System.out.println("RFID: Yellow");
-                System.out.println("Adding GooglePlugin...");
+                /*System.out.println("Adding GooglePlugin...");
                 this.bunny.addPlugin(new GooglePlugin());
                 System.out.println("Removing SetModePlugin...");
                 this.bunny.removePlugin(this);*/
