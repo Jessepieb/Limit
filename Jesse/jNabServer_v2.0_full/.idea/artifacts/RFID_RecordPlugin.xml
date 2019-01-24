@@ -1,0 +1,17 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="RFID_RecordPlugin">
+    <output-path>$PROJECT_DIR$/files/plugins</output-path>
+    <root id="archive" name="RFID_RecordPlugin.jar">
+      <element id="directory" name="jNab">
+        <element id="directory" name="ext">
+          <element id="directory" name="helperPlugins">
+            <element id="file-copy" path="$PROJECT_DIR$/out/production/jNabServer_v2.0_full/jNab/ext/helperPlugins/RFID_RecordPlugin.class" />
+          </element>
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/manifestFiles/RFID_RecordPlugin/MANIFEST.MF" />
+      </element>
+    </root>
+  </artifact>
+</component>
