@@ -6,8 +6,6 @@ import jNab.core.protocol.*;
 import java.nio.file.*;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.net.Socket;
-import java.io.*;
 
 public class AlexaPlugin extends AbstractPlugin implements RecordEventListener, ClickEventListener, RFIDEventListener
 {
