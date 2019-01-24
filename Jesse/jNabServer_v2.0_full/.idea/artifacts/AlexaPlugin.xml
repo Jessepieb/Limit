@@ -1,0 +1,17 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="AlexaPlugin">
+    <output-path>$PROJECT_DIR$/files/plugins</output-path>
+    <root id="archive" name="AlexaPlugin.jar">
+      <element id="directory" name="jNab">
+        <element id="directory" name="ext">
+          <element id="directory" name="helperPlugin">
+            <element id="file-copy" path="$PROJECT_DIR$/out/production/jNabServer_v2.0_full/jNab/ext/helperPlugins/AlexaPlugin.class" />
+          </element>
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/manifestFiles/AlexaPlugin/MANIFEST.MF" />
+      </element>
+    </root>
+  </artifact>
+</component>

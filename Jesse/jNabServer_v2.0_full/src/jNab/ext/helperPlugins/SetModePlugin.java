@@ -26,13 +26,12 @@ public class SetModePlugin extends AbstractPlugin implements RFIDEventListener
                 this.bunny.removePlugin(this);*/
                 break;
             case "d0021a053b462c56":
-                /*
                 System.out.println("RFID: Green");
                 System.out.println("Adding RFID_RecordPlugin...");
                 this.bunny.addPlugin(new RFID_RecordPlugin());
                 System.out.println("Removing SetModePlugin...");
                 this.bunny.removePlugin(this);
-                break;*/
+                break;
             case "d0021a053b463984":
                 System.out.println("RFID: Pink");
                 /*
