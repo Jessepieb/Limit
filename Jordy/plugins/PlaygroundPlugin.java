@@ -30,15 +30,15 @@ public class PlaygroundPlugin extends AbstractPlugin implements RFIDEventListene
                 break;
             case "d0021a053b463984":
 				System.out.println("RFID: Pink");
-                playChoreography("Colours");
+                playChoreography("Disco");
                 break;
             case "d0021a053b452c90":
             	System.out.println("RFID: Orange");
-                playChoreography("Colours");
+                //playChoreography("Colours");
                 break;
             case "d0021a053b4240ca":
             	System.out.println("RFID: Yellow");
-                playChoreography("Colours");
+                //playChoreography("Colours");
                 break;
         }
     }
