@@ -19,8 +19,8 @@ public class SetModePlugin extends AbstractPlugin implements RFIDEventListener
         switch(rfid){
             case "d0021a0353184691":
                 System.out.println("RFID: Red");
-                System.out.println("Adding RadioPlugin...");
-                this.bunny.addPlugin(new RadioPlugin());
+                System.out.println("Adding MatchingColorsPlugin...");
+                this.bunny.addPlugin(new MatchingColorsPlugin());
                 System.out.println("Removing SetModePlugin...");
                 this.bunny.removePlugin(this);
                 break;
@@ -47,10 +47,10 @@ public class SetModePlugin extends AbstractPlugin implements RFIDEventListener
                 break;
             case "d0021a053b4240ca":
                 System.out.println("RFID: Yellow");
-                //System.out.println("Adding GooglePlugin...");
-                //this.bunny.addPlugin(new GooglePlugin());
-                //System.out.println("Removing SetModePlugin...");
-                //this.bunny.removePlugin(this);
+                /*System.out.println("Adding GooglePlugin...");
+                this.bunny.addPlugin(new GooglePlugin());
+                System.out.println("Removing SetModePlugin...");
+                this.bunny.removePlugin(this);*/
                 break;
         }
     }
