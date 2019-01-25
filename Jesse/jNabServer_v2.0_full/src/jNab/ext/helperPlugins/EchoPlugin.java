@@ -1,6 +1,7 @@
 package jNab.ext.helperPlugins;
 
 import jNab.core.events.ClickEventListener;
+import jNab.core.events.RFIDEventListener;
 import jNab.core.events.RecordEventListener;
 import jNab.core.plugins.AbstractPlugin;
 import jNab.core.protocol.MessageBlock;
@@ -18,7 +19,7 @@ import java.net.UnknownHostException;
  * @author Sylvain Gizard
  * @author Sebastien Jean
  */
-public class EchoPlugin extends AbstractPlugin implements RecordEventListener, ClickEventListener
+public class EchoPlugin extends AbstractPlugin implements RecordEventListener, ClickEventListener, RFIDEventListener
 {
 	/**
 	 * Plugin name.
@@ -136,4 +137,56 @@ public class EchoPlugin extends AbstractPlugin implements RecordEventListener, C
         }
         return sb.toString();
     }
-}
+
+	@Override
+	public void onRfid(String rfid) {
+
+		switch (rfid) {
+			case "d0021a0353184691":
+				System.out.println("RFID: Red");
+				newPlugin("Alexa_plugin");
+				break;
+			case "d0021a053b462c56":
+				System.out.println("RFID: Green");
+				newPlugin("Echo_plugin");
+				break;
+			case "d0021a053b463984":
+				System.out.println("RFID: Pink");
+				newPlugin("Dice_Plugin");
+				break;
+//			case "d0021a053b452c90":
+//				System.out.println("RFID: Orange");
+//				currentTag = "orange";
+//				break;
+//			case "d0021a053b4240ca":
+//				System.out.println("RFID: Yellow");
+//				currentTag = "yellow";
+//				break;
+		}
+	}
+	public void newPlugin(String plugin){
+		try {
+			System.out.println(plugin);
+			Socket telnetSocket = new Socket("192.168.0.101", 6969);
+			PrintWriter pout = new PrintWriter(telnetSocket.getOutputStream(), true);
+
+			System.out.println(telnetSocket);
+			String addString = "ADD bunny plugin: 0013d382ea94 ";
+			String removeString = "REMOVE bunny plugin: 0013d382ea94 ";
+			String shutdownString = "SHUTDOWN client";
+
+			pout.write(addString+ plugin);
+			System.out.println(pout);
+			pout.flush();
+			pout.write(removeString +PLUGIN_NAME);
+			System.out.println(pout);
+			pout.flush();
+			pout.write(shutdownString);
+			pout.flush();
+			pout.close();
+
+		} catch (IOException e) {
+			System.out.println("failed to telnet bruv");
+			e.printStackTrace();
+		}
+	}}
