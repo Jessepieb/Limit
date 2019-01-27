@@ -11,7 +11,6 @@ zip -X -r submission/index.zip * -x build build/* *.xlsx Skills Skills/* test te
 echo 'build complete...'
 
 cd submission
-
 # declare -a OTHER_ALIASES=(LIVE LIVE-1)
 
 # GET Total number of functions
