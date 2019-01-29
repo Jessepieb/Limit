@@ -35,17 +35,5 @@ while(poll == None):
     poll = conv.poll()
 
 
-
-#if (response.is_file):
-#    print("moving")
-#    os.system(movecmd)
-
-#exec("pushtotalk.py -i convert.wav -o response.wav")
-#shutil.copy("response.wav", dest_path+"response.wav")
-#os.remove("input.wav")
-#if (response.is_file):
-#    os.remove("output.wav")
-#    os.remove("response.wav")
-#os.remove("response.wav")
 print("finished")
 sys.exit(0)

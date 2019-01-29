@@ -1,0 +1,19 @@
+{
+  "name": "nabalexa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "David Dijkhoff",
+  "license": "ISC",
+  "dependencies": {
+    "ask-sdk": "^2.3.0",
+    "aws-sdk": "^2.384.0",
+    "nodemailer": "^5.1.1",
+    "request": "^2.88.0",
+    "util": "^0.11.1",
+    "xml2js": "^0.4.19"
+  }
+}
