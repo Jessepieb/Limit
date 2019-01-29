@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Created-By: 10.0-b23 (Sun Microsystems Inc.)
+Ant-Version: Apache Ant 1.7.0
+
+Name: jNab
+Plugin-Actions: .
+Plugin-Type: RFIDPlugin
+Plugin-MainClass: jNab.ext.helperPlugins.MatchingColorsPlugin
+Plugin-Parameters: .
+Plugin-Name: MatchingColorsPlugin
+

@@ -47,7 +47,7 @@ public class AlexaPlugin extends AbstractPlugin implements RecordEventListener, 
         //Trigger the SetModePlugin:
         try {
             System.out.println("Adding SetModePlugin...");
-            this.bunny.addPlugin(new jNab.ext.helperPlugins.SetModePlugin());
+            this.bunny.addPlugin(new SetModePlugin());
             System.out.println("Removing AlexaPlugin...");
             this.bunny.removePlugin(this);
         }
@@ -98,6 +98,7 @@ public class AlexaPlugin extends AbstractPlugin implements RecordEventListener, 
     }
 
     private void alexaRequest() {
+        /*
         try (
             //open socket to connect to localhost tcp proxy
             Socket echoSocket = new Socket("localhost", 9000);
@@ -116,9 +117,8 @@ public class AlexaPlugin extends AbstractPlugin implements RecordEventListener, 
             }
         } catch (IOException e1) {
             e1.printStackTrace();
-        }
+        }*/
 
-        /*
         //Executing AVS python script:
         try
         {
@@ -135,7 +135,7 @@ public class AlexaPlugin extends AbstractPlugin implements RecordEventListener, 
         catch (InterruptedException e) {
             System.out.println(e);
             return;
-        }*/
+        }
     }
 
     private void setInputFile(String color) {
