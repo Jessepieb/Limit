@@ -4,6 +4,10 @@ import jNab.core.events.ClickEventListener;
 import jNab.core.events.RFIDEventListener;
 import jNab.core.events.RecordEventListener;
 import jNab.core.plugins.AbstractPlugin;
+import jNab.core.protocol.MessageBlock;
+import jNab.core.protocol.Packet;
+import jNab.core.protocol.PingIntervalBlock;
+
 import java.io.FileOutputStream;
 import java.io.IOException;
 
@@ -63,7 +67,9 @@ public class RFID_RecordPlugin extends AbstractPlugin implements RFIDEventListen
 
 	public void onDoubleRecord(byte[] data) { }
 
-	public void onSingleClick() { }
+	public void onSingleClick() {
+		audioPlayBack(currentTag);
+	}
 
 	public void onDoubleClick() {
 		//Trigger the SetModePlugin:
@@ -76,5 +82,16 @@ public class RFID_RecordPlugin extends AbstractPlugin implements RFIDEventListen
 		catch (Error e) {
 			System.out.println(e);
 		}
+	}
+
+	private void audioPlayBack(String filename) {
+		//Audio playback of file
+		Packet p = new Packet();
+		MessageBlock mb = new MessageBlock(674);
+		mb.addPlayLocalSoundCommand("audio/" + filename + "_input.wav");
+		mb.addWaitPreviousEndCommand();
+		p.addBlock(mb);
+		p.addBlock(new PingIntervalBlock(1));
+		this.bunny.addPacket(p);
 	}
 }
